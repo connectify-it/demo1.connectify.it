@@ -7,20 +7,19 @@ html {
 
 /* #region main */
 
-main {
-   height: 87%;
-}
-
 .parallax {
-   background-image: url("../img/home.jpg");
-
    min-height: 500px;
-   height: 100%;
-
+   height: 100vh;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+/* #region home */
+#homeParallax {
+   background-image: url("../img/home.jpg");
+   height: calc(100vh - 77px);
 }
 
 #titleContainer {
@@ -31,7 +30,6 @@ main {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
    background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -60,6 +58,72 @@ main {
    transition: 0.15s linear;
    background-color: #e67d2283;
 }
+/* #endregion home */
+
+/* #region preparation */
+#preparation1Parallax {
+   background-image: url("../img/breadPreparation1.jpg");
+}
+
+.doubleContainerPreparation {
+   height: 100vh;
+   width: 50vw;
+}
+
+#titleContainerPreparation {
+   display: flex;
+}
+
+#imagePreparation {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: brightness(0.7);
+}
+
+#descrizionePreparation {
+   display: flex;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#descrizionePreparation p {
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 25vw;
+   padding: 50px;
+   border-radius: 15px;
+   font-size: 1vw;
+}
+
+#descrizionePreparation h1 {
+   font-size: 2vw;
+}
+
+#descrizionePreparation h1,
+#descrizionePreparation p {
+   text-align: center;
+   font-style: italic;
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* #endregion preparation */
+
+/* #region prodotti */
+
+#productsContainer {
+   color: white;
+   font-size: 2vw;
+   text-align: center;
+   font-style: italic;
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* #endregion prodotti */
 
 /* #endregion */
 
@@ -121,6 +185,10 @@ main {
 /* Demo purposes only */
 body {
    background-color: #212121;
+}
+
+header {
+   height: 77px;
 }
 
 /* #endregion */
