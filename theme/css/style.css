@@ -73,6 +73,33 @@ html {
   display: flex;
 }
 
+@media screen and (max-width: 1100px) {
+  #titleContainerPreparation {
+    flex-direction: column;
+  }
+  .doubleContainerPreparation {
+    height: 50vh;
+    width: 100vw;
+  }
+  #preparation1Parallax {
+    height: 100vh;
+  }
+  #preparation1Parallax h1 {
+    font-size: clamp(1.5rem, 6vw, 3rem) !important;
+    margin-bottom: 25px !important;
+  }
+  #descrizionePreparation p {
+    min-width: 90vw !important;
+    border-radius: 15px;
+    padding: 25px !important;
+    font-size: clamp(1rem, 1.5vw, 2.2rem);
+  }
+}
+@media screen and (max-height: 670px) {
+  #descrizionePreparation p {
+    padding-top: 5px !important;
+  }
+}
 #imagePreparation {
   width: 100%;
   height: 100%;
@@ -94,14 +121,15 @@ html {
 
 #descrizionePreparation p {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 25vw;
+  min-width: 25vw;
+  max-width: 40vw;
   padding: 50px;
   border-radius: 15px;
-  font-size: 1vw;
+  font-size: clamp(1rem, 1.5vw, 2.2rem);
 }
 
 #descrizionePreparation h1 {
-  font-size: 2vw;
+  font-size: clamp(1rem, 3vw, 5rem);
 }
 
 #descrizionePreparation h1,
@@ -115,16 +143,72 @@ html {
 /* #region prodotti */
 #productsParallax {
   background-image: url("../images/parallax/ovenBackground.jpg");
+  min-height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-#productsContainer {
+#productsMasterContainer {
+  height: 100%;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#productsParallax h1 {
   color: white;
   font-size: 2vw;
   text-align: center;
-  font-style: italic;
-  height: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  font-size: clamp(1rem, 3vw, 5rem);
+  padding: 30px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  #productsParallax h1 {
+    font-size: clamp(2.5rem, 5vw, 3rem) !important;
+  }
+  .product {
+    flex-basis: 80% !important;
+  }
+  .card-text {
+    font-size: clamp(1.5rem, 4vw, 5rem) !important;
+  }
+  #productsContainer img {
+    height: 80% !important;
+  }
+}
+#productsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#productsContainer .card {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 15px;
+  border: 10px solid rgba(0, 0, 0, 0);
+}
+
+.product {
+  margin: 5px;
+  flex-basis: 30%;
+  margin-bottom: 15px;
+}
+
+#productsContainer .card p {
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+#productsContainer img {
+  width: 100%;
+  height: 75%;
+  border-radius: 15px;
 }
 
 /* #endregion prodotti */
