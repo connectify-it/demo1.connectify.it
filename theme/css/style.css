@@ -143,9 +143,6 @@ html {
 /* #region prodotti */
 #productsParallax {
   background-image: url("../images/parallax/ovenBackground.jpg");
-  min-height: 100vh;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 #productsMasterContainer {
@@ -153,6 +150,7 @@ html {
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
 }
 
 #productsParallax h1 {
