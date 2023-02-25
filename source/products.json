@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Baguette",
+    "url": "../images/products/baguette.jpg"
+  },
+  {
+    "name": "Dolci",
+    "url": "../images/products/bakery.jpg"
+  },
+  {
+    "name": "Pagnotte",
+    "url": "../images/products/loaf.webp"
+  }
+]

@@ -3,6 +3,7 @@
 body,
 html {
   height: 100%;
+  background-color: #212529;
 }
 
 /* #region main */
@@ -18,7 +19,7 @@ html {
 
 /* #region home */
 #homeParallax {
-  background-image: url("../img/parallax/home.jpg");
+  background-image: url("../images/parallax/home.jpg");
   height: calc(100vh - 77px);
 }
 
@@ -62,7 +63,7 @@ html {
 
 /* #region preparation */
 #preparation1Parallax {
-  background-image: url("../img/parallax/breadPreparation1.jpg");
+  background-image: url("../images/parallax/breadPreparation1.jpg");
 }
 
 .doubleContainerPreparation {
@@ -116,7 +117,7 @@ html {
 /* #region prodotti */
 
 #productsParallax {
-  background-image: url("../img/parallax/ovenBackground.jpg");
+  background-image: url("../images/parallax/ovenBackground.jpg");
 }
 
 #productsContainer {
